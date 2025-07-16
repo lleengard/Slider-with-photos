@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Slider</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="nav">
+        <a href="###" class="link" onclick="changeSlideByLink(0)"
+          >Rostov-on-Don, Admiral</a
+        >
+        <a href="###" class="link" onclick="changeSlideByLink(1)"
+          >Sochi Thieves</a
+        >
+        <a href="###" class="link" onclick="changeSlideByLink(2)"
+          >Rostov-on-Don Patriotic</a
+        >
+      </div>
+      <div class="content__container">
+        <div class="content">
+          <h1 class="header">
+            Completed<br />
+            projects
+          </h1>
+          <p class="discribe">
+            Only a small part of the work performed by our company is presented
+            on the site. For 14 years on in the construction market we have made
+            happy more than 1000 families
+          </p>
+          <div class="stats">
+            <div class="city">
+              <p class="stats__text">City:</p>
+              <p id="location" class="stats__text__sub"></p>
+            </div>
+            <div class="area">
+              <p class="stats__text">apartment area:</p>
+              <p id="space" class="stats__text__sub"></p>
+            </div>
+            <div class="time">
+              <p class="stats__text">Repair time:</p>
+              <p id="repairTime" class="stats__text__sub"></p>
+            </div>
+            <div class="cost">
+              <p class="stats__text">Repair Cost:</p>
+              <p id="repairCost" class="stats__text__sub">Upon request</p>
+            </div>
+          </div>
+          <div class="slider__arrows">
+            <img
+              class="slider__arrow__left"
+              onclick="prevSlide()"
+              src="svg/left_arrow.svg"
+              alt="left__arrow"
+            />
+            <div
+              id="firstDot"
+              class="dot selected__dot"
+              onclick="swipeSlide(0)"
+            ></div>
+            <div id="secondDot" class="dot" onclick="swipeSlide(1)"></div>
+            <div id="thirdDot" class="dot" onclick="swipeSlide(2)"></div>
+            <img
+              class="slider__arrow__right"
+              onclick="nextSlide()"
+              src="svg/right_arrow.svg"
+              alt="right__arrow"
+            />
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider__images">
+            <img id="photo" src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
