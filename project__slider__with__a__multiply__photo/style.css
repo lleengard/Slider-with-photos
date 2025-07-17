@@ -1,0 +1,116 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #131313;
+}
+
+.wrapper {
+  margin: 107px 135px 124px 135px;
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    .link {
+      text-decoration: none;
+      color: #ffffff4d;
+      opacity: 30%;
+      font-family: Yeseva One;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 139%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      margin-right: 56px;
+    }
+    .link:visited,
+    .link:focus,
+    .link:hover {
+      color: #e3b873;
+      opacity: 100%;
+      text-decoration: underline;
+      text-decoration-thickness: 0.1px;
+      text-underline-offset: 6px;
+    }
+  }
+  .content__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    .content {
+      width: 100%;
+      max-width: 442px;
+      display: flex;
+      flex-direction: column;
+      .header {
+        color: #e3b873;
+        font-family: Yeseva One;
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 139%;
+        letter-spacing: -7%;
+        text-transform: uppercase;
+      }
+      .discribe {
+        color: #ffffff;
+        font-family: Nunito Sans;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 191%;
+        letter-spacing: 0%;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 42px;
+        .stats__text {
+          font-family: Yeseva One;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 139%;
+          letter-spacing: 0%;
+          text-transform: uppercase;
+          color: #e3b873;
+        }
+        .stats__text__sub {
+          font-family: Nunito Sans;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 164%;
+          letter-spacing: 0%;
+          color: #ffffff;
+          white-space: break-spaces;
+        }
+      }
+
+      .slider__arrows {
+        margin-top: 80px;
+        display: flex;
+        cursor: pointer;
+
+        .dot {
+          margin-left: 8px;
+          margin-right: 8px;
+          padding: 6px;
+          height: 2px;
+          width: 2px;
+          border-radius: 100px;
+          background-color: #ffffff4d;
+          opacity: 30%;
+          cursor: pointer;
+        }
+
+        .dot:nth-of-type(1) {
+          margin-left: 29px;
+        }
+        .dot:nth-of-type(3) {
+          margin-right: 29px;
+        }
+
+        .selected__dot {
+          background-color: #ffffff !important;
+          opacity: 100% !important;
+        }
+      }
+    }
+  }
+}
